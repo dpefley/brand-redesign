@@ -1,0 +1,177 @@
+/* Attribution 2: https://stackoverflow.com/questions/8118741/css-font-helvetica-neue */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  height: 100%;
+  background-color: #FAFAFA;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+/* End Attribution 2 */
+
+#search-bar {
+  border: 1px solid #EFC038;
+  border-radius: 1px;
+  margin: 12px;
+}
+
+#right-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  height: 100%;
+  width: auto;
+  margin: auto;
+  grid-column-gap: 5px;
+}
+
+.liR {
+  float: right;
+  /* border: 1px solid #EFC038;
+  border-radius: 1px; */
+  margin: 4px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+#logo {
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  float: right;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .liR {
+    float: center;
+  }
+
+  .li {
+    width: 30%;
+  }
+
+  #bottom-grid {
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto auto !important;
+  }
+
+  #bottom-2-grid {
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto auto auto !important;
+  }
+}
+
+#welcome-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+#top-grid {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #EFEFEF;
+}
+
+#bottom-grid {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  background-color: white;
+}
+
+#bottom-2-grid {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  background-color: white;
+}
+
+#find {
+  font-size: 40px;
+  color: #EFC038;
+  font-style: italic;
+  text-align: center;
+}
+
+.cat-img {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.cat {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  font-size: 25px;
+  color: #79C3E4;
+  cursor: pointer;
+  border: 1px solid #EFC038;
+  border-radius: 1px;
+}
+
+.more-info {
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Attribution 1: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black*/
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 100%;
+  /* margin: auto; */
+  /* padding: 10px; */
+  padding-left: 2%;
+  overflow: hidden;
+  background-color: #162343;
+  position: relative;
+  z-index: 500;
+}
+
+/*https://stackoverflow.com/questions/7415106/html-css-total-page-width-is-wider-than-content*/
+html,body {
+  overflow-x: hidden;
+  background-color: #EFEFEF;
+}
+
+.li {
+  float: left;
+  border: 1px solid #EFC038;
+  border-radius: 1px;
+  margin: 4px;
+  vertical-align: middle;
+}
+
+li a {
+  display: block;
+  width: auto;
+  color: #79C3E4;
+  text-align: center;
+  padding: 14px 16px;
+  /* padding: 14% 16%; */
+  text-decoration: none;
+}
+
+.li a:hover {
+  background-color: #E6E6E6;
+}
+/*End Attribution 1*/
