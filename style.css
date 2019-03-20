@@ -60,47 +60,71 @@ html {
     width: 30%;
   }
 
+  #welcome-grid {
+    padding-top: 100px !important;
+  }
+
   #bottom-grid {
     display: grid;
-    grid-template-columns: auto !important;
-    grid-template-rows: auto auto auto !important;
+    grid-template-columns: 50% 50% !important;
+    /* grid-template-rows: auto auto auto !important; */
   }
 
   #bottom-2-grid {
     display: grid;
+    grid-template-columns: 50% 50% !important;
+    /* grid-template-rows: auto auto auto !important; */
+  }
+
+  #action-grid {
+    display: grid;
     grid-template-columns: auto !important;
-    grid-template-rows: auto auto auto !important;
   }
 }
 
 #welcome-grid {
   display: grid;
   grid-template-rows: auto auto auto;
+  padding-top: 50px;
 }
 
 #top-grid {
   display: grid;
   grid-template-columns: auto;
+  grid-template-rows: auto;
   background-color: #EFEFEF;
+  margin: 20px;
+  grid-column-gap: 0px;
 }
 
 #bottom-grid {
   display: grid;
-  grid-template-columns: 33% 34% 33%;
+  /*grid-template-columns: 33% 34% 33%;*/
+  grid-template-columns: 16% 17% 17% 17% 17% 16%;
   background-color: white;
 }
 
 #bottom-2-grid {
   display: grid;
-  grid-template-columns: 33% 34% 33%;
+  grid-template-columns: 16% 17% 17% 17% 17% 16%;
   background-color: white;
 }
 
 #find {
   font-size: 40px;
   color: #EFC038;
-  font-style: italic;
   text-align: center;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#better {
+  font-size: 40px;
+  color: #162343;
+  text-align: center;
+  font-style: italic;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: bold;
 }
 
 .cat-img {
@@ -122,11 +146,26 @@ html {
   border-radius: 1px;
 }
 
+.cat:hover {
+  background-color: rgba(239,192,56,0.5);
+}
+
+.action {
+  margin: 20px;
+  color: #162343;
+}
+
+#action-grid {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+
 .more-info {
   text-align: center;
   text-decoration: none;
   color: #FFFFFF;
   margin: 10px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
 a {
@@ -143,7 +182,7 @@ ul {
   padding-left: 2%;
   overflow: hidden;
   background-color: #162343;
-  position: relative;
+  position: fixed;
   z-index: 500;
 }
 
@@ -172,6 +211,6 @@ li a {
 }
 
 .li a:hover {
-  background-color: #E6E6E6;
+  background-color: rgba(239,192,56,0.5);
 }
 /*End Attribution 1*/
